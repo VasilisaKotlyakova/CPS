@@ -57,13 +57,27 @@
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
-    margin-left: 20px;
+    margin-left: 10px;
     margin-right: 24px;
     margin-top: 14px;
   }
 
   .header__logo {
     margin-left: -70px;
+  }
+
+  .information__icon button, .header__icon button, .footer__list button {
+    border: 1px solid white;
+    background-color: white;
+  }
+
+  .information__icon button:hover, .header__icon button:hover, .header__logo a:hover{
+    opacity: 70%;
+    transition-duration: 0.5s;
+  }
+
+  .menu {
+    flex: 1 1 auto;
   }
 
   .menu__row {
@@ -114,40 +128,41 @@
     color: #1B1C21;
   }
 
-  .footer {
-    position: absolute;
-    bottom: 150px;
-  }
-  .footer__icons, .footer__list {
+
+  .information__icons, .footer__list {
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
   }
 
   .footer__languages {
-    margin-left: -10px;
+    margin-left: -20px;
     margin-bottom: 32px;
   }
 
-  .footer__icons {
-    margin-left: 24px;
+  .information__icons {
+    margin-left: 20px;
     margin-bottom: 16px;
   }
 
-  .footer__icon {
+  .information__icon {
     margin-right: 16px;
   }
 
-  .footer__email {
+  .information__phone a, .information__email a {
+    text-decoration: none;
+    color: #1B1C21;
+  }
+
+  .information__email {
     margin-left: 24px;
     margin-bottom: 12px;
     font-size: 16px;
     line-height: 24px;
     letter-spacing: -0.2px;
-    color: #1B1C21;
   }
 
-  .footer__phone {
+  .information__phone {
     margin-left: 24px;
     margin-bottom: 40px;
     font-family: 'TT Lakes';
@@ -158,7 +173,7 @@
     color: #1B1C21;
   }
 
-  .footer__list a {
+  .footer__list button {
     text-decoration: none;
     font-size: 16px;
     line-height: 24px;
@@ -167,7 +182,7 @@
     color: black;
   }
 
-  .footer__list a:hover {
+  .footer__list button:hover {
     text-decoration: none;
     font-size: 16px;
     line-height: 24px;

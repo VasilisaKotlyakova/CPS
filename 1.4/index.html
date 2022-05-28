@@ -16,9 +16,9 @@
           <div class="container">
               <!--в расширениях содержимое делится на столбцы-->
               <div class="header__row">
-                  <div class="header__icon"><input type="image" src="img/burger.svg" alt="иконка крестик"></div>
-                  <div class="header__logo"><input  type="image" src="img/Group.svg" alt="логотип"></div>
-                  <div class="header__icon"><input type="image" src="img/search.svg" alt="иконка поиска"></div>
+                  <div class="header__icon"><button><img src="img/burger.svg" alt="иконка крестик"></button></div>
+                  <div class="header__logo"><a href="#"><img src="img/Group.svg" alt="логотип"></a></div>
+                  <div class="header__icon"><button><img src="img/search.svg" alt="иконка поиска"></button></div>
               </div>
           </div>
       </header>
@@ -26,7 +26,7 @@
       <div class="menu">
           <div class="container">
               <div class="menu__row">
-                  <ol class="menu__list">
+                  <ul class="menu__list">
                       <li><a href="#">Ремонт техники</a></li>
                       <li><a href="#">Услуги и сервисы</a></li>
                       <li><a href="#">Корпоративным клиентам</a></li>
@@ -35,31 +35,35 @@
                       <li><a href="#">Производителям</a></li>
                       <li><a href="#">Наши сервисные центры</a></li>
                       <li><a href="#">Контакты</a></li>
-                  </ol>
+                  </ul>
               </div>
           </div>
       </div>
+
+      <div class="information">
+          <div class="information__row">
+              <div class="information__icons">
+                  <div class="information__icon"><button><img src="img/chat%20copy.svg" alt="иконка звонка"></button></div>
+                  <div class="information__icon"><button><img src="img/chat.svg" alt="иконка чата"></button></div>
+                  <div class="information__icon"><button><img src="img/profile.svg" alt="иконка профиля"></button></div>
+              </div>
+              <div class="information__email">
+                  <a href="#">mail@cps.com</a>
+              </div>
+              <div class="information__phone">
+                  <a href="#">8 800 890 8900</a>
+              </div>
+          </div>
+      </div>
+
       <footer class="footer">
           <div class="container">
-              <div class="footer__row">
-                  <div class="footer__icons">
-                      <div class="footer__icon"><input type="image" src="img/chat%20copy.svg" alt="иконка звонка"></div>
-                      <div class="footer__icon"><input  type="image" src="img/chat.svg" alt="иконка чата"></div>
-                      <div class="footer__icon"><input type="image" src="img/profile.svg" alt="иконка профиля"></div>
-                  </div>
-                  <div class="footer__email">
-                      <div>mail@cps.com</div>
-                  </div>
-                  <div class="footer__phone">
-                      <div>8 800 890 8900</div>
-                  </div>
-                  <div class="footer__languages">
-                      <ol class="footer__list">
-                          <li><a href="#">RU</a></li>
-                          <li><a href="#">EN</a></li>
-                          <li><a href="#">CH</a></li>
-                      </ol>
-                  </div>
+              <div class="footer__languages">
+                  <ul class="footer__list">
+                      <li><button>RU</button></li>
+                      <li><button>EN</button></li>
+                      <li><button>CH</button></li>
+                  </ul>
               </div>
           </div>
       </footer>

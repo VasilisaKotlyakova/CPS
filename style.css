@@ -96,7 +96,7 @@
     font-weight: bold;
   }
 
-  .menu__list {
+  .menu__list ul {
     display: flex;
     align-items: center;
     list-style: none;
@@ -108,22 +108,33 @@
     top: 5px;
   }
 
-  ol li {
+  ul li {
     color: #7E7E82;
-    font-size: 16px;
-    padding: 8px;
-    height: 24px;
     flex-wrap: nowrap;
     min-width: max-content;
+
+
   }
 
-  ol li:hover {
+  ul > li > a {
+    display: block;
+    color: #7E7E82;
+    text-decoration: none;
+    font-size: 16px;
+    padding: 8px;
+    line-height: 24px;
+    border: 2px solid #F8F8F8;
+    border-radius: 6px;
+  }
+
+  ul > li > a:hover {
+    display: block;
     border: 2px solid #B8FFEC;
     border-radius: 6px;
     background-color: white;
   }
 
-  .menu__list{
+  .menu__list ul{
     overflow-x: scroll;
   }
 
@@ -140,17 +151,16 @@
     flex-direction: row;
     justify-content: flex-start;
     align-items: center;
-    height: 56px;
-    margin-left: 40px;
-    margin-top: -55px;
-  }
 
-  label {
+    margin-left: 30px;
+    margin-top: -40px;
+    border: 2px solid #F8F8F8;
+    background-color: #F8F8F8;
+
     font-size: 16px;
     line-height: 24px;
     letter-spacing: -0.2px;
     font-weight: 500;
-    margin-left: 16px;
   }
 
 
@@ -200,7 +210,7 @@
       top: 110px;
     }
 
-    .menu__list {
+    .menu__list ul {
       margin-left: -5px;
     }
 
@@ -211,16 +221,21 @@
     .description__text {
       flex: 1 1 auto;
       height: 100px;
-      width: 290px;
       overflow: hidden;
       margin-left: 10px;
       margin-bottom: 60px;
     }
 
+    .description__image {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      max-width: 720px;
+    }
+
     .description__image img {
       width: 320px;
       height: 230px;
-      margin-left: 0;
     }
 
     .name-page__row-button-1, .name-page__row-button-2 {
@@ -229,6 +244,7 @@
 
     .description__row-button {
       margin-left: 10px;
+      margin-bottom: 10px;
     }
 
   }
@@ -289,10 +305,11 @@
     .description__text {
       flex: 1 1 312px;
       height: 148px;
-      width: 310px;
+      min-width: 312px;
       overflow: hidden;
       padding:  0 0 8px 0px;
       margin-left: 32px;
+      margin-right: 48px;
     }
 
     .description__image {
@@ -319,6 +336,10 @@
 }
 
   @media (min-width: 1120px) {
+
+    body {
+      max-width: 1120px;
+    }
     .container {
       min-width: 1120px;
       margin: 0 auto;
@@ -393,8 +414,10 @@
       margin-right: 20px;
     }
 
-    .menu__list {
+    .menu__list ul{
       flex-wrap: wrap;
       justify-content: space-between;
     }
+
+
   }
