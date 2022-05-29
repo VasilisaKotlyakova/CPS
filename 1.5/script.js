@@ -3,7 +3,7 @@ let buttonClose = document.querySelector('.software__button--close'); // ище�
 let listSoftware = document.querySelector('.software__list'); // ищем список брендов
 
 //инициализируем swiper
-if(window.innerWidth < 760) {
+if(window.innerWidth < 620) {
     const swiper = new Swiper('.swiper-container', {
         direction: 'horizontal',
 

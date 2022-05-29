@@ -135,6 +135,25 @@ button.hidden {
     height: 72px;
   }
 
+  .software__list::after {
+    content: " ";
+    width: 24px;
+    height: 81px;
+    background: linear-gradient(270deg, #F8F8F8 16.84%, rgba(248, 248, 248, 0.0001) 100%);
+    position: absolute;
+    right: 0px;
+    bottom: 0px;
+  }
+
+  .software__list::before {
+    content: " ";
+    width: 24px;
+    height: 81px;
+    background: linear-gradient(270deg, #F8F8F8 16.84%, rgba(248, 248, 248, 0.0001) 100%);
+    position: absolute;
+    left: 0px;
+    bottom: 0px;
+  }
 }
 
 @media (min-width: 768px) and (max-width: 1119px)  {
