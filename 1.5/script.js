@@ -6,34 +6,17 @@ let listSoftware = document.querySelector('.software__list'); // ищем спи
 if(window.innerWidth < 620) {
     const swiper = new Swiper('.swiper-container', {
         direction: 'horizontal',
-
+        slidesPerView: 1.3,
         //отступ между слайдами
         spaceBetween: 16,
+
+        slidesPerColumn: 1.3,
+
         // If we need pagination
         pagination: {
             el: '.swiper-pagination',
             clickable: true,
         },
-
-        //количество выводимых слайдов при разных размерах экрана
-        breakpoints: {
-            320: {
-                //количество слайдов
-                slidesPerView: 1.2,
-                // Optional parameters
-            },
-
-            480: {
-                //количество слайдов
-                slidesPerView: 2,
-            },
-
-            650: {
-                //количество слайдов
-                slidesPerView: 3,
-            },
-
-        }
 
     });
 

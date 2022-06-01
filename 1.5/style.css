@@ -131,28 +131,36 @@ button.hidden {
   }
 
   .swiper-slide {
-    width: 240px;
+    display: flex;
+    flex: 0 0 240px;
     height: 72px;
+    margin-right: 16px;
+    order: 1;
+
   }
 
-  .software__list::after {
+  .blur-right {
+    display: flex;
+    content: " ";
+    width: 24px;
+    height: 81px;
+    z-index: 5;
+    background: linear-gradient(270deg, #F8F8F8 16.84%, rgba(248, 248, 248, 0.0001) 100%);
+    position: absolute;
+    right: -5px;
+    top: 105px;
+  }
+
+  .blur-left {
+    display: flex;
     content: " ";
     width: 24px;
     height: 81px;
     background: linear-gradient(270deg, #F8F8F8 16.84%, rgba(248, 248, 248, 0.0001) 100%);
     position: absolute;
-    right: 0px;
-    bottom: 0px;
-  }
-
-  .software__list::before {
-    content: " ";
-    width: 24px;
-    height: 81px;
-    background: linear-gradient(270deg, #F8F8F8 16.84%, rgba(248, 248, 248, 0.0001) 100%);
-    position: absolute;
-    left: 0px;
-    bottom: 0px;
+    z-index: 2;
+    left: -15px;
+    top: 105px;
   }
 }
 

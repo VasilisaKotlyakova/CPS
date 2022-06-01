@@ -163,6 +163,14 @@
     font-weight: 500;
   }
 
+  .description__row-button::before{
+    display: inline-block;
+    content: " ";
+    height: 24px;
+    width: 24px;
+    background-image: url(img/expand.svg);
+
+  }
 
   @media (min-width: 320px) and (max-width: 767px) {
 
