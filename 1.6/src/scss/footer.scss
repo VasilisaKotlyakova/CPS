@@ -1,0 +1,98 @@
+@import "./variables.scss";
+
+.footer {
+  border-top: 1px solid $blue;
+  padding-bottom: 10px;
+}
+
+.footer__row {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.footer__row div {
+  font-family: 'TT Lakes';
+  font-size: 14px;
+  line-height: 16px;
+  text-align: center;
+
+  color: $textElemColor;
+
+  mix-blend-mode: normal;
+  opacity: 0.72;
+
+  margin-top: 16px;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+@media (min-width: 768px) and (max-width: 1439px) {
+
+  .footer {
+    min-width: 768px;
+    max-width: 1439px;
+  }
+  .footer__row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .footer__row div:nth-child(1){
+    width: 218px;
+    text-align: left;
+    padding-left: 30px;
+    padding-bottom: 20px;
+    padding-top: 30px;
+  }
+
+  .footer__row div:nth-child(3){
+    width: 330px;
+    text-align: right;
+    padding-right: 30px;
+    padding-bottom: 20px;
+    padding-top: 30px;
+  }
+
+  .footer__row div:nth-child(2){
+    padding-bottom: 20px;
+    padding-top: 30px;
+  }
+
+}
+
+@media (min-width: 1440px) {
+
+  .footer {
+    width: 1120px;
+  }
+  .footer__row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .footer__row div:nth-child(1){
+    width: 218px;
+    text-align: left;
+    padding-left: 30px;
+    padding-bottom: 20px;
+    padding-top: 30px;
+  }
+
+  .footer__row div:nth-child(3){
+    width: 330px;
+    text-align: right;
+    padding-right: 30px;
+    padding-bottom: 20px;
+    padding-top: 30px;
+  }
+
+  .footer__row div:nth-child(2){
+
+    padding-bottom: 20px;
+    padding-top: 30px;
+  }
+
+}

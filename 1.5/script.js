@@ -7,10 +7,12 @@ if(window.innerWidth < 620) {
     const swiper = new Swiper('.swiper-container', {
         direction: 'horizontal',
         slidesPerView: 1.3,
+
+        slidesPerColumn: 1.3,
         //отступ между слайдами
         spaceBetween: 16,
 
-        slidesPerColumn: 1.3,
+
 
         // If we need pagination
         pagination: {
